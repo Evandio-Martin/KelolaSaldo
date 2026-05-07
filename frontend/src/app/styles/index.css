@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fbf7ff;
+  background-image: linear-gradient(180deg, #fbf7ff 0%, #fff8fb 100%);
+  color: #111827;
+}
+
+::selection {
+  background-color: rgba(192, 132, 252, 0.28);
+}
+
+#root {
+  min-height: 100svh;
+}
